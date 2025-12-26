@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez le Groupe Scolaire An-Nour - Abobo-Avocatier, Abidjan, Côte d'Ivoire">
+    <title>Contact - Groupe Scolaire An-Nour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Groupe Scolaire An-Nour Logo">
+                <span class="logo-text">An-Nour</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programmes.html">Programmes</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="direction.html">Mot de la Direction</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                ☰
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+    <div class="container">
+        <h1>Nous contacter</h1>
+        <p>N'hésitez pas à nous contacter pour toute question concernant votre enfant</p>
+    </div>
+</section>
+
+<!-- CONTACT INFO SECTION -->
+<section class="section section-cream">
+    <div class="container">
+        <div class="contact-info-grid">
+
+            <!-- LOCATION -->
+            <div class="contact-info-card">
+                <div class="contact-icon">📍</div>
+                <h3>Adresse</h3>
+                <p>
+                    Abobo-Avocatier à la pompe<br>
+                    Près du dépôt 9 de la SOTRA<br>
+                    Abidjan, Côte d'Ivoire
+                </p>
+                <a href="https://goo.gl/maps/uezNqJvA6zH2" target="_blank" rel="noopener" class="link-arrow">Voir sur Google Maps →</a>
+            </div>
+
+            <!-- PHONE -->
+            <div class="contact-info-card">
+                <div class="contact-icon">📞</div>
+                <h3>Téléphone</h3>
+                <p>
+                    <a href="tel:+22505667651894">+225 05 66 765 184</a><br>
+                    <a href="tel:+22505767699999">+225 05 76 769 999</a><br>
+                    <a href="tel:+22507084268223">+225 07 08 426 823</a>
+                </p>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="contact-info-card">
+                <div class="contact-icon">✉️</div>
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:GroupeAnNourCI@gmail.com">GroupeAnNourCI@gmail.com</a>
+                </p>
+            </div>
+
+            <!-- HOURS -->
+            <div class="contact-info-card">
+                <div class="contact-icon">🕐</div>
+                <h3>Heures d'ouverture</h3>
+                <p>
+                    Lundi, Mardi : 7h30 – 17h30<br>
+                    Mercredi : 7h30 – 16h00<br>
+                    Jeudi, Vendredi : 7h30 – 17h30<br>
+                    Samedi : 7h30 – 12h00
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT FORM SECTION -->
+<section class="section section-white">
+    <div class="container-narrow">
+        <div class="form-intro">
+            <h2>Envoyez-nous un message</h2>
+            <p>Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display: none;">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Nom complet *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Téléphone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <select id="subject" name="subject">
+                        <option value="">Sélectionnez un sujet</option>
+                        <option value="admission">Admission / Pré-inscription</option>
+                        <option value="info">Demande d'information</option>
+                        <option value="rdv">Prise de rendez-vous</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                <button type="reset" class="btn-outline">Réinitialiser</button>
+            </div>
+
+            <div class="form-notice" id="formNotice"></div>
+        </form>
+    </div>
+</section>
+
+<!-- MAP SECTION (OPTIONAL) -->
+<section class="section section-cream">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: var(--space-lg);">Notre emplacement</h2>
+        <div class="map-container">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.861575405574!2d-4.038694755599258!3d5.43798362281667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc195b1547e12c7%3A0xd8e538988f5dd6b5!2sSchool%20Group%20Islamique%20An-Nour!5e0!3m2!1sen!2sus!4v1766716200200!5m2!1sen!2sus"
+                    width="100%"
+                    height="450"
+                    style="border:0; border-radius: 8px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <p style="text-align: center; margin-top: var(--space-md); color: var(--color-gray-mid); font-size: 0.9rem;">
+            <a href="https://goo.gl/maps/uezNqJvA6zH2" target="_blank" rel="noopener">Ouvrir dans Google Maps →</a>
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Groupe Scolaire An-Nour</h3>
+                <p>
+                    Une école confessionnelle islamique située à Abobo-Avocatier, près du dépôt SOTRA. De la maternelle à la terminale.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>
+                    Abobo-Avocatier à la pompe<br>
+                    Près du dépôt 9 de la SOTRA<br>
+                    Abidjan, Côte d'Ivoire
+                </p>
+                <p>
+                    <a href="tel:+22505667651894">+225 05 66 765 184</a><br>
+                    <a href="tel:+22505767699999">+225 05 76 769 999</a><br>
+                    <a href="mailto:GroupeAnNourCI@gmail.com">GroupeAnNourCI@gmail.com</a>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Heures d'ouverture</h3>
+                <p>
+                    Lundi, Mardi : 7h30 – 17h30<br>
+                    Mercredi : 7h30 – 16h00<br>
+                    Jeudi, Vendredi : 7h30 – 17h30<br>
+                    Samedi : 7h30 – 12h00
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <p>
+                    <a href="index.html">Accueil</a><br>
+                    <a href="programmes.html">Programmes</a><br>
+                    <a href="admissions.html">Admissions</a><br>
+                    <a href="direction.html">Mot de la Direction</a><br>
+                    <a href="contact.html">Contact</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Groupe Scolaire An-Nour. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    mobileMenuToggle.addEventListener('click', function() {
+        mainNav.classList.toggle('mobile-open');
+    });
+
+    // Contact form handling
+    const contactForm = document.getElementById('contactForm');
+    const formNotice = document.getElementById('formNotice');
+
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Submit to Netlify
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(new FormData(contactForm)).toString()
+        })
+            .then(() => {
+                // Show success message
+                formNotice.textContent = 'Merci pour votre message ! Nous vous répondrons bientôt.';
+                formNotice.className = 'form-notice success';
+
+                // Reset form after 3 seconds
+                setTimeout(() => {
+                    contactForm.reset();
+                    formNotice.textContent = '';
+                    formNotice.className = 'form-notice';
+                }, 3000);
+            })
+            .catch((error) => {
+                // Show error message
+                formNotice.textContent = 'Une erreur est survenue. Veuillez réessayer.';
+                formNotice.className = 'form-notice error';
+            });
+    });
+</script>
+
+</body>
+</html>
